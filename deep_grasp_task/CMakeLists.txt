@@ -77,18 +77,18 @@ install(
     ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
 )
 
-# # Mark roslaunch files for installation
-# install(
-#   DIRECTORY
-#     launch
-#   DESTINATION
-#     ${CATKIN_PACKAGE_SHARE_DESTINATION}
-# )
-#
-# # Mark config files for installation
-# install(
-#   DIRECTORY
-#     config
-#   DESTINATION
-#     ${CATKIN_PACKAGE_SHARE_DESTINATION}
-# )
+# Mark roslaunch files for installation
+install(
+  DIRECTORY
+    launch
+  DESTINATION
+    ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
+
+# Mark config files for installation
+install(
+  DIRECTORY
+    config
+  DESTINATION
+    ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
