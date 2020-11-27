@@ -2,22 +2,22 @@
 max_solutions: 10
 
 # Planning group and link names
-arm_group_name: "panda_arm"
-eef_name: "hand"
-hand_group_name: "hand"
-hand_frame: "panda_link8"
+arm_group_name: "manipulator"
+eef_name: "endeffector"
+hand_group_name: "endeffector"
+hand_frame: "ee_link"
 
 # Poses
 hand_open_pose: "open"
 hand_close_pose: "close"
-arm_home_pose: "ready"
+arm_home_pose: "home"
 
 # Scene frames
-world_frame: "world"
-table_reference_frame: "world"
-object_reference_frame: "world"
-camera_reference_frame: "world"
-surface_link: "table"
+world_frame: "base_link"
+table_reference_frame: "base_link"
+object_reference_frame: "base_link"
+camera_reference_frame: "camera_rgb_optical_frame"
+surface_link: "base_link"
 
 # Collision object for picking
 # CYLINDER object specifications
@@ -48,7 +48,7 @@ camera_pose: [0.5, 0, 0.7, 0, 0, 0] # side
 # camera_pose: [0.5, 0, 0.7, 0, 1.571, 1.571] # over head
 
 # Table model
-spawn_table: true
+spawn_table: false
 table_name: "table"
 table_dimensions: [0.4, 0.5, 0.1]  # [length, width, height]
 table_pose: [0.5, -0.25, 0, 0, 0, 0]
